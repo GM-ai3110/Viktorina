@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Викторина: Тела и Вещества</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        #question-container {
+            margin: 20px 0;
+        }
+        .answer {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .answer.correct {
+            background-color: #d4edda;
+        }
+        .answer.wrong {
+            background-color: #f8d7da;
+        }
+        #next-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            display: none;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #score {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .result {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="question-container">
+            <img src="znayko.png" alt="Знайко" style="width: 50px; position: absolute; top: 20px; left: 20px;">
+            <h2>Въпрос</h2>
+            <p id="question"></p>
+            <div id="answer-buttons" class="answer-container"></div>
+            <button id="next-button">Следващ въпрос</button>
+        </div>
+        <div id="score"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
